@@ -1,0 +1,149 @@
+.season-offers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.season-offers  .season-title{
+    width: 95%;
+}
+
+.season-title p{
+    font-size: 20px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.season-products {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.season-item {
+    flex: 0 0 auto;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px 8px;
+    transition: 0.15s;
+    margin-right: 10px;
+}
+
+.season-item:hover {
+    overflow: visible;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+.season-item:hover .season-item-bottom-menu {
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+.season-item-bottom-menu {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 15px 8px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.head-span{
+    border: 1px solid green;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 10px
+}
+
+.season-item p{
+    text-align: center;
+    z-index: 100;
+}
+.link-image{
+   position: relative;
+   margin-top: 20px;
+   margin-bottom: 15px;
+   z-index: 0;
+
+}
+
+.link-image span{
+    background-color: green;
+    padding: 7px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    font-size: 13px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price strong{
+    display: flex;
+    flex-direction: column;
+}
+
+strong i{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+strong b{
+    color: red;
+    font-size: 16px;
+}
+
+.price span{
+    font-size: 14px;
+    color: #777777;
+}
+
+.product-basket-button button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.product-basket-button button i{
+    margin-right: 6px;
+}
+.product-links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.product-links :nth-child(2){
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 0 32px;
+}
+
+.product-links a{
+    color: black;
+}
+
+.product-links button{
+    background-color: transparent;
+    border: none;
+}
+.product-links i{
+    font-size: 18px;
+}

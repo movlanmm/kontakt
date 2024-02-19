@@ -1,0 +1,141 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+nav .container{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    width: 55%;
+}
+.nav-bar-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.nav-bar-nav ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar-nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.nav-bar-nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.nav-bar-nav ul :first-child a{
+    color: red;
+}
+
+.nav-bar-cta {
+    width: 30%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.nav-bar-cta .call{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+}
+.fa-solid.fa-star-of-life{
+    font-size: 8px;
+    color: red;
+}
+.nav-bar-cta .call:hover{
+    text-decoration: underline;
+}
+
+.pay-button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sign-in{
+    background-color: lightgray;
+    padding: 10px 10px;
+    color: black;
+    border-radius: 10px;
+}
+
+.lang-change-button{
+    position: relative;
+}
+
+.lang-change-button button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lang-2{
+    background-color: white;
+    box-shadow: 1px 1px 4px lightgrey;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    z-index: 100;
+    display: none;
+}
+
+.lang-2.show {
+   display: flex;
+}
+
+.lang-2 button{
+    width: 95%;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.lang-2 button:hover{
+    background-color: lightgray;
+}
+
+
+
+.nav-bar-cta .cart-button{
+    color: rgb(106, 106, 106);
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+.nav-bar-cta .account{
+    color: rgb(106, 106, 106);
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+    display: none;
+}

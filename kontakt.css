@@ -1,0 +1,615 @@
+@import url('./catalog-section.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./navbar.css');
+@import url('./offers-section.css');
+@import url('./sales-section.css');
+@import url('./season-section.css');
+@import url('./video-section.css');
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    width: 100%;
+    background-color: #f3f3f3;
+    margin-top: 15px;
+}
+.left ul li:hover .sidebar-menu{
+    display: flex;
+}
+
+.sidebar-menu{
+    width: 78vw;
+    height: 600px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 240px;
+    display: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidebar-catalogs{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 ;
+}
+
+.sidebar-item a{
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sidebar-item ul{
+    row-gap: 1px;
+}
+
+.sidebar-item ul li a{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebar-item-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.sidebar-images{
+    width: 25%;
+}
+@media (min-width:200px) and (max-width:500px) {
+    nav .container{
+        width: 100% !important;
+        flex-wrap: nowrap;
+    }
+ 
+    .nav-bar-nav{
+        display: none;
+    }
+    
+    .nav-bar-cta .pay-button {
+        display: none;
+    }
+
+    .nav-bar-cta .sign-in{
+        display: none;
+    }
+
+    .nav-bar-cta{
+        width: 50% !important;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .nav-bar-cta .account{
+      display: inline;
+    }
+
+    .lang-change-button{
+        width: 30% !important;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .lang-change-button button{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /* header */
+
+    header .container{
+        width: 95% !important;
+    }
+
+    .catalog-button{
+        width: 5% !important;
+    }
+
+
+    .catalog-button button::after{
+        content: "";
+    }
+
+    .search-bar{
+        width: 95% !important;
+        background-color: transparent;
+        white-space: nowrap;
+    }
+    .header-buttons{
+        display: none;
+    }
+
+
+    .catalog .left{
+        display: none;
+    }
+
+    .catalog .middle{
+        width: 100% !important;
+    }
+
+    .middle .bottom{
+        display: none;
+    }
+
+    .catalog .right{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .right .head{
+        flex-direction: row;
+        align-items: center;
+        width: 100% !important;
+        white-space: nowrap;
+    }
+
+    .head .timer{
+        width: 20% !important;
+    }
+
+    .brands{
+        width: 100% !important;
+        overflow: scroll;
+        gap: 20px;
+    }
+
+    .catalog-links{
+        overflow-x: scroll;
+        gap: 10px;
+    }
+
+    .catalog-links a{
+        min-width: 280px !important;
+        justify-content: space-around;
+        padding: 10px 20px;
+    }
+
+    .catalog-links .titles{
+        width: 90% !important;
+    }
+
+    
+    .sales-section .sales-buttons ul{
+      
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-y: scroll;
+    }
+
+    .sales-section .sales-buttons ul button{
+        white-space: nowrap;
+    }
+
+    .sales-section .products{
+        overflow-x: scroll;
+    }
+
+    .products .product-item{
+        overflow: hidden;
+    }
+    .product-item-bottom-menu{
+        display: none;
+    }
+
+    .mob-buttons{
+        display: flex;
+    }
+
+    .offers{
+        margin-bottom: 30px;
+    }
+
+    .offers .offer-item{
+        flex-direction: column;
+        height: max-content;
+      
+    }
+
+    .offer-item img{
+        width: 70% !important;
+    }
+
+    .offer-item .item-info{
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .item-info p{
+        margin: 20px 0;
+    }
+
+    .season-products{
+        width: 100% !important;
+        overflow: scroll;
+    }
+
+    .seaseon-item-bottom-menu{
+        display: none;
+    }
+
+    .video-view p{
+        display: none;
+    }
+
+    .video-view{
+        width: calc(100%/2);
+    }
+
+    .video-head{
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    
+
+    .footer-container{
+        flex-direction: column;
+    }
+    .connection{
+        width: 100% !important;
+        order: 1;
+    }
+
+    .connection .foot-item-title{
+        display: none;
+    }
+
+    .connection ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100% !important;
+    }
+
+    .company{
+        width: 100% !important;
+        order: 3;
+    }
+
+    .company ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+
+    .company ul li{
+        width: 50% !important;
+        margin-bottom: 11px;
+    }
+
+    .information{
+        width: 100% !important;
+        order: 2;
+    }
+
+    .information ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+
+    .information ul li{
+        width: 50% !important;
+        margin-bottom: 11px;
+    }
+
+    .customers{
+        width: 100% !important;
+        order: 4;
+    }
+
+    .customers ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+
+    .customers ul li{
+        width: 50% !important;
+        margin-bottom: 11px;
+    }
+
+    .socials{
+        width: 100% !important;
+        order: 0;
+    }
+
+    .social-links{
+        width: 30% !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width:1024px) {
+    nav .container{
+        width: 100% !important;
+        padding: 0 20px;
+        flex-wrap: nowrap;
+    }
+ 
+    .nav-bar-nav{
+        display: none;
+    }
+    
+    .nav-bar-cta .pay-button {
+        display: none;
+    }
+
+    .nav-bar-cta .sign-in{
+        display: none;
+    }
+
+    .nav-bar-cta{
+        width: 50% !important;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .nav-bar-cta .account{
+      display: inline;
+    }
+
+    .lang-change-button{
+        width: 30% !important;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    .lang-change-button button{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /* header */
+
+    header .container{
+        width: 95% !important;
+    }
+
+    .catalog-button{
+        width: 5% !important;
+    }
+
+
+    .catalog-button button::after{
+        content: "";
+    }
+
+    .search-bar{
+        width: 95% !important;
+        background-color: transparent;
+        white-space: nowrap;
+    }
+    .header-buttons{
+        display: none;
+    }
+
+
+    .catalog .left{
+        display: none;
+    }
+
+    .catalog .middle{
+        width: 100% !important;
+    }
+
+    .middle .bottom{
+        display: none;
+    }
+
+    .catalog .right{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .right .head{
+        flex-direction: row;
+        align-items: center;
+        width: 100% !important;
+        white-space: nowrap;
+    }
+
+    .head .timer{
+        width: 20% !important;
+    }
+
+    .brands{
+        width: 100% !important;
+        overflow: scroll;
+        gap: 20px;
+    }
+
+    .catalog-links{
+        overflow-x: scroll;
+        gap: 10px;
+    }
+
+    .catalog-links a{
+        min-width: 280px !important;
+        justify-content: space-around;
+        padding: 10px 20px;
+    }
+
+    .catalog-links .titles{
+        width: 90% !important;
+    }
+
+    
+    .sales-section .sales-buttons ul{
+      
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-y: scroll;
+    }
+
+    .sales-section .sales-buttons ul button{
+        white-space: nowrap;
+    }
+
+    .sales-section .products{
+        overflow-x: scroll;
+    }
+
+    .products .product-item{
+        overflow: hidden;
+        width: 60%;
+    }
+    .product-item-bottom-menu{
+        display: none;
+    }
+
+    .mob-buttons{
+        display: flex;
+    }
+
+    .offers{
+        margin-bottom: 30px;
+    }
+
+    .offers .offer-item{
+        flex-direction: column;
+        height: max-content;
+        width: 80%;
+      
+    }
+
+    .offer-item img{
+        width: 70% !important;
+    }
+
+    .offer-item .item-info{
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .item-info p{
+        margin: 20px 0;
+    }
+
+    .price{
+        flex-direction: column;
+    }
+
+    .season-products{
+        width: 100% !important;
+        overflow: scroll;
+    }
+
+    .seaseon-item-bottom-menu{
+        display: none;
+    }
+
+    .season-item{
+        width: 60%;
+    }
+
+    .video-view p{
+        display: none;
+    }
+
+    .video-view{
+        width: calc(100%/2);
+    }
+
+    .video-head{
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    
+
+    .footer-container{
+        flex-direction: column;
+    }
+    .connection{
+        width: 100% !important;
+        order: 1;
+    }
+
+    .connection .foot-item-title{
+        display: none;
+    }
+
+    .connection ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100% !important;
+    }
+
+    .company{
+        width: 100% !important;
+        order: 3;
+    }
+
+    .company ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+
+    .company ul li{
+        width: 50% !important;
+        margin-bottom: 11px;
+    }
+
+    .information{
+        width: 100% !important;
+        order: 2;
+    }
+
+    .information ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+
+    .information ul li{
+        width: 50% !important;
+        margin-bottom: 11px;
+    }
+
+    .customers{
+        width: 100% !important;
+        order: 4;
+    }
+
+    .customers ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+
+    .customers ul li{
+        width: 50% !important;
+        margin-bottom: 11px;
+    }
+
+    .socials{
+        width: 100% !important;
+        order: 0;
+    }
+
+    .social-links{
+        width: 30% !important;
+    }
+
+}
+
