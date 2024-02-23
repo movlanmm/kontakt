@@ -74,6 +74,7 @@
 
 .product-item {
     flex: 0 0 auto;
+    width: 262px;
     background-color: white;
     position: relative;
     border-radius: 10px;
@@ -133,7 +134,9 @@
 }
 
 .product-item p {
-    text-align: center;
+    text-align: start;
+    font-size: 14px;
+    text-wrap: wrap;
     z-index: 100;
 }
 
@@ -144,6 +147,7 @@
     z-index: 0;
 
 }
+
 
 .link-image span {
     background-color: green;
@@ -169,7 +173,7 @@
     flex-direction: column;
 }
 
-strong i {
+strong:not(.normal-price) i {
     text-decoration: line-through;
     font-size: 14px;
 }

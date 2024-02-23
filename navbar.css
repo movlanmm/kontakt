@@ -1,25 +1,27 @@
-nav{
+nav {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     border-bottom: 1px solid lightgray;
+    background-color: #fff;
 }
 
-nav .container{
+nav .container {
     width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 20%;
 }
 
-.logo img{
+.logo img {
     width: 55%;
 }
+
 .nav-bar-nav {
     display: flex;
     justify-content: flex-start;
@@ -32,41 +34,44 @@ nav .container{
     justify-content: space-evenly;
 }
 
-.nav-bar-nav ul li a{
+.nav-bar-nav ul li a {
     font-size: 16px;
     font-weight: 500;
     color: black;
 }
-.nav-bar-nav ul li a:hover{
+
+.nav-bar-nav ul li a:hover {
     text-decoration: underline;
 }
 
-.nav-bar-nav ul :first-child a{
+.nav-bar-nav ul :first-child a {
     color: red;
 }
 
 .nav-bar-cta {
     width: 30%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.nav-bar-cta .call{
+.nav-bar-cta .call {
     font-size: 20px;
     font-weight: bold;
     color: black;
     display: flex;
 }
-.fa-solid.fa-star-of-life{
+
+.fa-solid.fa-star-of-life {
     font-size: 8px;
     color: red;
 }
-.nav-bar-cta .call:hover{
+
+.nav-bar-cta .call:hover {
     text-decoration: underline;
 }
 
-.pay-button{
+.pay-button {
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid green;
@@ -75,18 +80,18 @@ nav .container{
     cursor: pointer;
 }
 
-.sign-in{
-    background-color: lightgray;
+.sign-in {
+    background-color: #f3f3f3;
     padding: 10px 10px;
     color: black;
     border-radius: 10px;
 }
 
-.lang-change-button{
+.lang-change-button {
     position: relative;
 }
 
-.lang-change-button button{
+.lang-change-button button {
     background-color: transparent;
     border: none;
     font-size: 16px;
@@ -94,9 +99,14 @@ nav .container{
     cursor: pointer;
 }
 
-.lang-2{
+.account {
+    padding-left: 8px;
+}
+
+.lang-2 {
     background-color: white;
     box-shadow: 1px 1px 4px lightgrey;
+    border-radius: 5px;
     width: 150px;
     padding: 10px;
     position: absolute;
@@ -107,23 +117,33 @@ nav .container{
 }
 
 .lang-2.show {
-   display: flex;
+    display: flex;
 }
 
-.lang-2 button{
-    width: 95%;
+.lang-2 button {
+    width: 98%;
     padding: 5px;
     text-align: left;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.lang-2 button:hover{
-    background-color: lightgray;
+.lang-2 button:hover {
+    background-color: rgb(241, 241, 241);
 }
 
 
+#lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
-.nav-bar-cta .cart-button{
+#lang i {
+    font-size: 10px;
+}
+
+.nav-bar-cta .cart-button {
     color: rgb(106, 106, 106);
     font-size: 15px;
     border: none;
@@ -131,7 +151,7 @@ nav .container{
     margin-left: 5px;
 }
 
-.nav-bar-cta .account{
+.nav-bar-cta .account {
     color: rgb(106, 106, 106);
     font-size: 15px;
     border: none;

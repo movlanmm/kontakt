@@ -1,24 +1,24 @@
-.catalogs{
+.catalogs {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.catalog{
+.catalog {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px 0;
 }
 
-.catalog .container{
+.catalog .container {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.container .left{
+.container .left {
     width: 18%;
     background-color: white;
     border-radius: 10px;
@@ -30,7 +30,7 @@
 
 }
 
-.left ul{
+.left ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -42,7 +42,7 @@
 
 }
 
-.left ul li a{
+.left ul li a {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -52,31 +52,33 @@
     margin-left: 4px;
 }
 
-.left ul li{
+.left ul li {
     padding: 0 5px;
 }
 
-.left ul li a:hover{
+.left ul li a:hover {
     color: red;
 }
-.left ul li a p{
+
+.left ul li a p {
     width: 75%;
     display: flex;
     justify-content: flex-start;
 }
 
-.container .middle{
+.container .middle {
     width: 62%;
     background-color: white;
     border-radius: 10px;
 }
 
-.middle img{
+.middle img {
     background-color: transparent;
     padding: 5px;
     width: 100%
 }
-.bottom{
+
+.bottom {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -84,7 +86,7 @@
     padding: 0 10px;
 }
 
-.bottom button{
+.bottom button {
     border: none;
     background-color: transparent;
     font-size: 14px;
@@ -92,16 +94,18 @@
     padding-bottom: 10px;
     cursor: pointer;
 }
-.bottom button:focus{
+
+.bottom button:focus {
     color: black;
     border-bottom: 1px solid black;
 }
 
-.bottom button:hover{
+.bottom button:hover {
     color: black;
     border-bottom: 1px solid black;
 }
-.container .right{
+
+.container .right {
     width: 18%;
     background-color: white;
     border-radius: 10px;
@@ -112,17 +116,17 @@
     padding: 20px;
 }
 
-.right .head{
+.right .head {
     display: flex;
     flex-direction: column;
 }
 
-.right .head-title{
+.right .head-title {
     font-size: 20px;
     font-weight: bold;
 }
 
-.timer{
+.timer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,56 +134,56 @@
     margin: 15px 0;
 }
 
-.time{
+.time {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.time span{
+.time span {
     color: #17a539;
     font-size: 16px;
 }
 
-.time em{
+.time em {
     font-size: 12px;
     color: #323232;
 }
 
-.line{
+.line {
     height: 10px;
     width: 1px;
     background-color: lightgray;
 }
 
-.bottom-line{
+.bottom-line {
     height: 1px;
     width: 100%;
     background-color: lightgray;
     margin-bottom: 15px;
 }
 
-.right-item{
+.right-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.right p{
+.right p {
     font-size: 17px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
 }
 
-#first{
+#first {
     font-size: 20px;
     font-weight: bold;
     color: #ff003c;
     margin-right: 10px;
 }
 
-#second{
+#second {
     font-size: 18px;
     text-decoration: line-through;
     color: #777777;
@@ -189,13 +193,13 @@
     text-decoration: line-through;
 }
 
-.credit-title{
+.credit-title {
     font-size: 12px;
     color: #777777;
     margin-bottom: 10px;
 }
 
-.basket-button{
+.basket-button {
     width: 100%;
     background-color: #ff003c;
     color: white;
@@ -208,26 +212,26 @@
     transition-duration: 0.15s;
 }
 
-.basket-button:hover{
+.basket-button:hover {
     opacity: 0.7;
 }
 
-.basket-button i{
+.basket-button i {
     font-size: 16px;
     margin: 0 10px;
 }
 
-.right a{
+.right a {
     font-size: 12px;
     color: #323232;
     margin-top: 3px;
 }
 
-.right a:hover{
+.right a:hover {
     text-decoration: underline;
 }
 
-.brands{
+.brands {
     background-color: white;
     width: 95%;
     display: flex;
@@ -236,7 +240,7 @@
     border-radius: 10px;
 }
 
-.brands a{
+.brands a {
     border: 1px solid lightgray;
     /* padding: 15px 2px; */
     border-radius: 5px;
@@ -244,15 +248,15 @@
     width: 58px;
 }
 
-.brands a img{
+.brands a img {
     width: 100%;
 }
 
-.brands a:hover{
+.brands a:hover {
     background-color: lightgray;
 }
 
-.catalog-links{
+.catalog-links {
     background-color: transparent;
     width: 95%;
     display: flex;
@@ -260,7 +264,7 @@
     margin-top: 10px;
 }
 
-.catalog-links a{
+.catalog-links a {
     display: flex;
     width: 24%;
     align-items: center;
@@ -271,27 +275,28 @@
     color: black;
 }
 
-.image i{
+.image i {
     font-size: 16px;
 }
-.titles{
+
+.titles {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
 
-.titles :first-child{
+.titles :first-child {
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 3px;
 }
 
-.titles :last-child{
+.titles :last-child {
     font-size: 12px;
     color: #777777;
 }
 
-.offers{
+.offers {
     width: 100%;
     height: 500px;
     background-color: red;

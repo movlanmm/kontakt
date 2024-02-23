@@ -1,4 +1,4 @@
-.offers{
+.offers {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     background-color: transparent;
 }
 
-.offer-title{
+.offer-title {
     font-size: 20px;
     color: #323232;
     font-weight: bold;
@@ -16,7 +16,7 @@
     margin-bottom: 20px;
 }
 
-.offers .container{
+.offers .container {
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@
     overflow-x: auto;
 }
 
-.offer-item{
+.offer-item {
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -33,27 +33,28 @@
     border-radius: 10px;
     flex: 0 0 auto;
     margin-right: 10px;
+
 }
 
-.container::-webkit-scrollbar{
+.container::-webkit-scrollbar {
     display: none;
 }
 
-.item-image{
+.item-image {
     width: 50%;
 }
 
-.item-image img{
+.item-image img {
     width: 100%;
     border-radius: 10px;
 }
 
-.item-info{
+.item-info {
     width: 50%;
     padding: 0 30px;
 }
 
-.item-span{
+.item-span {
     border: 1px solid green;
     font-size: 13px;
     color: green;
@@ -61,7 +62,7 @@
     border-radius: 10px
 }
 
-.item-info p{
+.item-info p {
     margin-bottom: 100px;
     margin-top: 20px;
     font-size: 24px;
