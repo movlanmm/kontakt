@@ -581,7 +581,7 @@ const catalogs = [
             id: 2,
             name: "Poco"
           },
-  
+
         ]
       },
     ]
@@ -606,7 +606,6 @@ catalogs.forEach(function (catalog) {
     </div>
   </div>
 </li>
-  
   `
 })
 
@@ -655,4 +654,98 @@ function dsf(subChild) {
     return a;
   })
   return subChilds.join('');
+}
+
+let hour = 6
+let minute = 23
+let second = 13
+let id = 0
+
+function scroll() {
+  id++
+  if (id === dailyItems.length) {
+    id = 0
+  }
+  second--
+
+  if (second === 0) {
+    minute--
+    second = 59
+    if (minute === 0) {
+      hour--
+      minute = 59
+    }
+    if (hour === 0) {
+      hour = 23
+      minute = 59
+      second = 59
+    }
+  }
+  dailyOffer.innerHTML = `
+                      <div class="head">
+                      <span class="head-title">Günün təklifi</span>
+                      <div class="timer">
+                        <div class="time">
+                          <span>${hour}</span>
+                          <em>saat</em>
+                        </div>
+                        <div class="line"></div>
+                        <div class="time">
+                          <span>${minute}</span>
+                          <em>dəqiqə</em>
+                        </div>
+                        <div class="line"></div>
+                        <div class="time">
+                          <span>${second}</span>
+                          <em>saniyə</em>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="bottom-line"></div>
+                      <div class="right-item">
+                      <p>${dailyItems[id].name}</p>
+                      <div class="discount">
+                        <span id="first">${dailyItems[id].discountPrice}<i class="fa-solid fa-manat-sign"></i></span>
+                        <span id="second">${dailyItems[id].price}<i class="fa-solid fa-manat-sign"></i></span>
+                      </div>
+                      <span class="credit-title">0%${dailyItems[id].creditMonth}ay</span>
+                      <img src="${dailyItems[id].image}" />
+                      <button class="basket-button">
+                        <i class="fa-solid fa-cart-shopping"></i>Səbətə at
+                      </button>
+                      <a href="#">Bütün təklifləri gör</a>
+                      </div>
+                    `
+}
+
+setInterval(scroll, 1000)
+
+const dailyOffer = document.getElementById('daily-container')
+
+const dailyItems = [
+  {
+    name: "Huawei watch fit 2 active midnight black",
+    image: "./assets/images/image1.png",
+    price: "299,99",
+    discountPrice: "209,99",
+    creditMonth: 18
+  },
+  {
+    name: "Tozsoran Daewoo DWC-212/2A ",
+    image: "https://kontakt.az/media/catalog/product/cache/df20cd8bec4b739560abbf0da1a141f6/n/e/new_project_-_2023-06-27t010556.254.png",
+    price: "79,99",
+    discountPrice: "59,99",
+    creditMonth: 24
+  },
+  {
+    name: "Kieslect Calling Watch KS Mini Blue",
+    image: "https://kontakt.az/media/catalog/product/cache/df20cd8bec4b739560abbf0da1a141f6/t/m/tm-dg-smw-1106-sw-0363-1.png",
+    price: "129,99",
+    discountPrice: "119,99",
+    creditMonth: 12
+  },
+]
+
+function time(){
+  
 }
